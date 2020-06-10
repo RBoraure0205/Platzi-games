@@ -1,0 +1,29 @@
+.banner--homepage {
+  width: 90%;
+  @include media(desktop-s) {
+    max-width: 300px;
+  }
+  padding: 50px;
+  margin-bottom: 50px;
+  background-color: $color-secundario;
+  color: $color-claro;
+  h3 {
+    @include font-size(30px);
+    @include media(desktop-s) {
+      @include font-size(20px);
+    }
+    @include titulos($Fuente2);
+  }
+  p {
+    @include font-size(20px);
+    @include media(desktop-s) {
+    }
+  }
+  .button {
+    padding: 10px;
+    height: 50px;
+    border: 2px solid $color-claro;
+    @include font-size(18px);
+    @include titulos($Fuente2);
+  }
+}
